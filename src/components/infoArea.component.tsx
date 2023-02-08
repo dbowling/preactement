@@ -29,6 +29,12 @@ function InfoArea({ messageValue, titleValue, children }: IProps) {
   );
 }
 
+InfoArea.tagName = 'cf-post';
+InfoArea.propTypes = {
+  title: 'String',
+};
+InfoArea.attributes = ['title-value', 'alert-type'];
+
 /* -----------------------------------
  *
  * Export
