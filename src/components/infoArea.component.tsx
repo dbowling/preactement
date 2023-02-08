@@ -1,4 +1,5 @@
 import { h, Fragment } from 'preact';
+import { useState } from 'preact/hooks';
 import * as PropTypes from 'prop-types';
 
 /* -----------------------------------
@@ -21,9 +22,14 @@ interface IProps {
  * -------------------------------- */
 
 function InfoArea({ messageValue, titleValue, children }: IProps) {
+  const [counter, setCounter] = useState(0);
+
   return (
     <Fragment>
       <h3 class="title">{titleValue}</h3>
+      <button onClick={() => setCounter((state) => state + 1)}>
+        Click Me ({counter})
+      </button>
       {children}
       <div class="slot">{messageValue}</div>
     </Fragment>
