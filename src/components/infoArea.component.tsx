@@ -1,4 +1,5 @@
 import { h, Fragment } from 'preact';
+import * as PropTypes from 'prop-types';
 
 /* -----------------------------------
  *
@@ -29,11 +30,17 @@ function InfoArea({ messageValue, titleValue, children }: IProps) {
   );
 }
 
+/* -----------------------------------
+ *
+ * Meta
+ *
+ * -------------------------------- */
+
 InfoArea.tagName = 'cf-post';
-InfoArea.propTypes = {
-  title: 'String',
-};
 InfoArea.attributes = ['title-value', 'alert-type'];
+InfoArea.propTypes = {
+  titleValue: PropTypes.string.isRequired,
+};
 
 /* -----------------------------------
  *

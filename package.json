@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/prop-types": "^15.7.5",
     "@types/webpack-env": "^1.16.3",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
@@ -28,6 +29,7 @@
   },
   "dependencies": {
     "preact": "^10.6.2",
-    "preactement": "^1.8.4"
+    "preactement": "^1.8.4",
+    "prop-types": "^15.8.1"
   }
 }
