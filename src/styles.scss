@@ -35,6 +35,31 @@ main {
 
 /* -----------------------------------
  *
+ * Tips
+ *
+ * -------------------------------- */
+
+section.tips {
+  font-size: 14px;
+
+  b {
+    font-weight: 700;
+  }
+
+  ul li {
+    line-height: 1.5;
+  }
+
+  code {
+    background: #f1f1f1;
+    border: 1px solid #b6b6b6;
+    border-radius: 2px;
+    padding: 1px 2px;
+  }
+}
+
+/* -----------------------------------
+ *
  * Element
  *
  * -------------------------------- */
@@ -87,6 +112,7 @@ info-area.alert {
 info-area .title {
   margin: 0 0 10px;
   font-size: 28px;
+  font-weight: 500;
   color: #222;
 }
 

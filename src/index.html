@@ -10,12 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <main>
+      <section class="tips">
+        <p><b>Tip</b>: Try editing the following custom attributes using devtools:</p>
+        <ul>
+          <li><code>title-value</code></li>
+          <li><code>alert-type</code> try "alert" or "info"</li>
+        </ul>
+      </section>
+
       <info-area class="alert" title-value="Alert!" alert-type="alert">
         <p>This is a child element</p>
         <div slot="messageValue">

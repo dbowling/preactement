@@ -1,5 +1,5 @@
 import { h, Fragment } from 'preact';
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 import * as PropTypes from 'prop-types';
 
 /* -----------------------------------
@@ -9,6 +9,7 @@ import * as PropTypes from 'prop-types';
  * -------------------------------- */
 
 interface IProps {
+  parent: HTMLElement;
   alertType: string;
   titleValue: string;
   messageValue: string;
@@ -21,8 +22,12 @@ interface IProps {
  *
  * -------------------------------- */
 
-function InfoArea({ messageValue, titleValue, children }: IProps) {
+function InfoArea({ parent, titleValue, alertType, messageValue, children }: IProps) {
   const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    parent.setAttribute('class', alertType);
+  }, [alertType]);
 
   return (
     <Fragment>
