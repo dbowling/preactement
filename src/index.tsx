@@ -22,4 +22,4 @@ import { InfoArea } from '@/components/infoArea.component';
  *
  * -------------------------------- */
 
-define('info-area', () => InfoArea, { attributes: InfoArea.attributes });
+define(InfoArea.tagName, () => InfoArea, { attributes: InfoArea.attributes });
