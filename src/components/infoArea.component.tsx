@@ -42,7 +42,7 @@ function InfoArea({ messageValue, titleValue, children }: IProps) {
  *
  * -------------------------------- */
 
-InfoArea.tagName = 'cf-post';
+InfoArea.tagName = 'info-area';
 InfoArea.attributes = ['title-value', 'alert-type'];
 InfoArea.propTypes = {
   titleValue: PropTypes.string.isRequired,
