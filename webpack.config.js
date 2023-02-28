@@ -21,9 +21,23 @@ module.exports = {
         loader: 'ts-loader',
       },
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: true,
+            },
+          },
+        ],
+        include: /\.module\.css$/,
       },
+      // {
+      //   test: /\.css$/i,
+      //   use: ['style-loader', 'css-loader'],
+      // },
       {
         test: /\.scss$/i,
         use: ['style-loader', 'css-loader', 'sass-loader'],

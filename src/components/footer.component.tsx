@@ -1,4 +1,5 @@
 import { h, Fragment } from 'preact';
+import styles from './footer.module.css';
 
 interface IProps {
   parent: HTMLElement;
@@ -11,7 +12,7 @@ function Footer({ parent, copyright, children }: IProps) {
     <Fragment>
       <h3 class="title">MSL Footer</h3>
       {children}
-      <div class="slot">&copy; {copyright}</div>
+      <div class={styles.copyright}>&copy; {copyright}</div>
     </Fragment>
   );
 }

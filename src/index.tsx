@@ -8,7 +8,7 @@ import 'preact/debug';
  *
  * -------------------------------- */
 
-import '@/styles.scss';
+// import '@/styles.scss';
 
 /* -----------------------------------
  *
